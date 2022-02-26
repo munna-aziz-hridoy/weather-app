@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Main js file -->
+    <script src="js/script.js" defer></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <section class="weather_card">
+      <!-- weather info section -->
+      <div class="weather-info">
+        <div class="weather-header">
+          <div class="location">
+            <i class="bx bx-current-location"></i>
+            <span class="city" id="city"></span>
+            <span class="country" id="country"></span>
+          </div>
+          <div class="toggle-icon" id="toggle-btn">
+            <i class="bx bx-search-alt"></i>
+          </div>
+        </div>
+        <div class="weather-body">
+          <div id="weather-img"></div>
+
+          <p class="weather-text" id="weather-text"></p>
+          <h2 class="weather-temp" id="weather-temp"></h2>
+        </div>
+        <div class="weather-footer">
+          <div class="wind-section">
+            <p class="temp-far">Temp in far: <span id="temp-in-far"></span></p>
+            <p class="wind-speed">
+              Wind speed: <span id="wind-speed"></span> km/p
+            </p>
+          </div>
+          <!-- <div class="date-section">
+            <p class="day">Satarday</p>
+            <p class="date"><span>26</span><span>Feb</span><span>2022</span></p>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- search city section -->
+      <div class="search-city" id="search-city">
+        <div class="input-box">
+          <a class="arrow-btn" id="arrow-btn"
+            ><i class="bx bx-right-arrow-alt"></i
+          ></a>
+          <input
+            class="search-city-input"
+            placeholder="Search your city..."
+            type="text"
+            id="search-city-input"
+          />
+          <a id="search-btn" class="search-btn"
+            ><i class="bx bx-search-alt"></i
+          ></a>
+        </div>
+        <div class="search-list">
+          <ul class="search-list-box" id="city-list">
+            <!-- <li class="search-list-item">Dhaka</li>
+            <li class="search-list-item">Dhaka</li>
+            <li class="search-list-item">Dhaka</li>
+            <li class="search-list-item">Dhaka</li>
+            <li class="search-list-item">Dhaka</li>
+            <li class="search-list-item">Dhaka</li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
