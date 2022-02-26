@@ -33,7 +33,7 @@ const getCurrentCity = (cities, inputValue) => {
 };
 
 const loadWeather = (city = "dhaka") => {
-  const api = `http://api.weatherapi.com/v1/current.json?key=6aa1712ae73e42ee98c104058222402&q=${city}&aqi=no`;
+  const api = `https://api.weatherapi.com/v1/current.json?key=6aa1712ae73e42ee98c104058222402&q=${city}&aqi=no`;
 
   fetch(api)
     .then((res) => res.json())
