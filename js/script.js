@@ -81,5 +81,3 @@ cityList.addEventListener("click", (e) => {
   cityList.textContent = "";
 });
 
-
-// some comment
