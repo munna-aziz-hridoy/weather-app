@@ -80,3 +80,6 @@ cityList.addEventListener("click", (e) => {
   cityInput.value = userClicked;
   cityList.textContent = "";
 });
+
+
+// some comment
